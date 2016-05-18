@@ -5,7 +5,7 @@ var app = express()
 app.set('port', (process.env.PORT || 5000))
 
 if (!process.env.MONGODB_URI) {
-  var mongoUri = 'mongodb://log-super-mongoose:1th!protection@ds011472.mlab.com:11472/heroku_kv7d4gmq'
+  var mongoUri = MONGODB_URI
 } else {
   var mongoUri = process.env.MONGODB_URI
 }
